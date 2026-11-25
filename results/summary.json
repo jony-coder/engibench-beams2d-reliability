@@ -1,0 +1,47 @@
+{
+  "config": {
+    "N_MODELS": 5,
+    "EPOCHS": 40,
+    "BATCH": 64,
+    "LR": 0.001,
+    "N_EVAL": 400,
+    "WORST_FRAC": 0.1,
+    "QUICK": false
+  },
+  "n_train": 3880,
+  "n_eval": 243,
+  "shape": [
+    50,
+    100
+  ],
+  "conditions": [
+    "volfrac",
+    "rmin",
+    "forcedist",
+    "overhang_constraint"
+  ],
+  "gap": {
+    "mean": 0.07620184482644675,
+    "lo": 0.05469444681866689,
+    "hi": 0.10293177825061227
+  },
+  "gap_median": 0.03766721100733688,
+  "gap_p90": 0.14383814421630636,
+  "gap_max": 1.9618634056247641,
+  "violation_rate": 0.0205761316872428,
+  "vol_err_mean": -0.00330651480965163,
+  "warning_signals": {
+    "ensemble disagreement": {
+      "auroc": 0.7168807339449541,
+      "lo": 0.6297223921168875,
+      "hi": 0.7963420420453063,
+      "spearman": 0.4421788676632193
+    },
+    "distance to 10 nearest training conditions": {
+      "auroc": 0.5037614678899083,
+      "lo": 0.38803905381214576,
+      "hi": 0.6150310400751521,
+      "spearman": 0.04228569762988311
+    }
+  }
+}
